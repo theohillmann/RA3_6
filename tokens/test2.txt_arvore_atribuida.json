@@ -1,0 +1,255 @@
+{
+  "lines": [
+    {
+      "line": 1,
+      "context": "( int mem_store )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 12
+        },
+        {
+          "kind": "STORE",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 2,
+      "context": "( int mem_store ) #2",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 9
+        },
+        {
+          "kind": "STORE",
+          "value": "B"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 3,
+      "context": "( int mem_store ) #3",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 0
+        },
+        {
+          "kind": "STORE",
+          "value": "R"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 4,
+      "context": "( ( memid memid > ) ( ( memid memid + ) mem_store ) ( int mem_store ) if )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "OP",
+          "value": ">"
+        },
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "STORE",
+          "value": "R"
+        },
+        {
+          "kind": "INT",
+          "value": 0
+        },
+        {
+          "kind": "STORE",
+          "value": "R"
+        },
+        {
+          "kind": "IF"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 5,
+      "context": "( int mem_store ) #4",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "STORE",
+          "value": "X"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 6,
+      "context": "( int mem_store ) #5",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "STORE",
+          "value": "Y"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 7,
+      "context": "( ( memid memid == ) ( ( memid int + ) mem_store ) ( memid ) if )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "X"
+        },
+        {
+          "kind": "REF",
+          "value": "Y"
+        },
+        {
+          "kind": "OP",
+          "value": "=="
+        },
+        {
+          "kind": "REF",
+          "value": "R"
+        },
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "STORE",
+          "value": "R"
+        },
+        {
+          "kind": "REF",
+          "value": "R"
+        },
+        {
+          "kind": "IF"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 8,
+      "context": "( ( memid int * ) )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "R"
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": "*"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 9,
+      "context": "( int mem_store ) #6",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 15
+        },
+        {
+          "kind": "STORE",
+          "value": "Z"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 10,
+      "context": "( ( memid memid > ) ( ( memid memid - ) mem_store ) ( memid ) if )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "Z"
+        },
+        {
+          "kind": "REF",
+          "value": "R"
+        },
+        {
+          "kind": "OP",
+          "value": ">"
+        },
+        {
+          "kind": "REF",
+          "value": "Z"
+        },
+        {
+          "kind": "REF",
+          "value": "R"
+        },
+        {
+          "kind": "OP",
+          "value": "-"
+        },
+        {
+          "kind": "STORE",
+          "value": "R"
+        },
+        {
+          "kind": "REF",
+          "value": "R"
+        },
+        {
+          "kind": "IF"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 11,
+      "context": "( memid )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "R"
+        }
+      ],
+      "type": "int"
+    }
+  ],
+  "symbols": {}
+}

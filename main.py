@@ -1,4 +1,14 @@
+"""
+Compilador RPN - Fase 3: Analisador Semântico
+Instituição: PUC PR
+Disciplina: Linguagens Formais e Compiladores
+Aluno: Theo Hillmann Luiz Coelho
+Grupo Canvas: RA3_6
+Data: 2025/2
+"""
+
 import json
+import argparse
 
 from define_grammar.define_grammar import definirGramaticaAtributos
 from semantic_analyzer.analyzer import analisarSemantica
@@ -11,7 +21,14 @@ from semantic_analyzer.attribute_tree import (
     gerar_arvore_atribuida,
 )
 
-FILE_PATH = "tokens/test1.txt"
+
+parser = argparse.ArgumentParser(description="Run syntactic and semantic analyzers")
+parser.add_argument(
+    "-f", "--file", dest="FILE_PATH", help="Path to the token file (txt)"
+)
+args = parser.parse_args()
+
+FILE_PATH = args.FILE_PATH
 
 grammar = definirGramaticaAtributos()
 st = grammar["symbol_table"]
@@ -25,207 +42,20 @@ syntactic_main(FILE_PATH, debug=False, source_lines=source_lines)
 with open(FILE_PATH.replace("txt", "json"), "r") as file:
     ast = json.load(file)
 
-tipos, erros, anot = analisarSemantica(ast, grammar)
-erros += analisarSemanticaMemoria(ast, table)
-erros += analisarSemanticaControle(ast, table)
+types, errors, anot = analisarSemantica(ast, grammar)
+
+errors += analisarSemanticaMemoria(ast, table)
+errors += analisarSemanticaControle(ast, table)
 
 arvore_atribuida = gerar_arvore_atribuida(anot, table)
 prefixo = FILE_PATH.replace(".json", "")
-assert arvore_atribuida == {
-    "lines": [
-        {
-            "line": 1,
-            "context": "( int int + )",
-            "postfix": [
-                {"kind": "INT", "value": 10},
-                {"kind": "INT", "value": 8},
-                {"kind": "OP", "value": "+"},
-            ],
-            "type": "int",
-        },
-        {
-            "line": 2,
-            "context": "( int int - )",
-            "postfix": [
-                {"kind": "INT", "value": 35},
-                {"kind": "INT", "value": 13},
-                {"kind": "OP", "value": "-"},
-            ],
-            "type": "int",
-        },
-        {
-            "line": 3,
-            "context": "( int res )",
-            "postfix": [{"kind": "INT", "value": 4}, {"kind": "RES"}],
-            "type": "error",
-        },
-        {
-            "line": 4,
-            "context": "( int int * )",
-            "postfix": [
-                {"kind": "INT", "value": 5},
-                {"kind": "INT", "value": 6},
-                {"kind": "OP", "value": "*"},
-            ],
-            "type": "int",
-        },
-        {
-            "line": 5,
-            "context": "( int int / )",
-            "postfix": [
-                {"kind": "INT", "value": 27},
-                {"kind": "INT", "value": 9},
-                {"kind": "OP", "value": "/"},
-            ],
-            "type": "int",
-        },
-        {
-            "line": 6,
-            "context": "( int int % )",
-            "postfix": [
-                {"kind": "INT", "value": 17},
-                {"kind": "INT", "value": 6},
-                {"kind": "OP", "value": "%"},
-            ],
-            "type": "int",
-        },
-        {
-            "line": 7,
-            "context": "( int int ^ )",
-            "postfix": [
-                {"kind": "INT", "value": 4},
-                {"kind": "INT", "value": 3},
-                {"kind": "OP", "value": "^"},
-            ],
-            "type": "int",
-        },
-        {
-            "line": 8,
-            "context": "( ( int res ) int * )",
-            "postfix": [
-                {"kind": "INT", "value": 4},
-                {"kind": "RES"},
-                {"kind": "INT", "value": 2},
-                {"kind": "OP", "value": "*"},
-            ],
-            "type": "int",
-        },
-        {
-            "line": 9,
-            "context": "( int ( int res ) + )",
-            "postfix": [
-                {"kind": "INT", "value": 80},
-                {"kind": "INT", "value": 4},
-                {"kind": "RES"},
-                {"kind": "OP", "value": "+"},
-            ],
-            "type": "int",
-        },
-        {
-            "line": 10,
-            "context": "( int mem_store )",
-            "postfix": [{"kind": "INT", "value": 55}, {"kind": "STORE", "value": "X"}],
-            "type": "int",
-        },
-        {
-            "line": 11,
-            "context": "( memid int - )",
-            "postfix": [
-                {"kind": "REF", "value": "X"},
-                {"kind": "INT", "value": 7},
-                {"kind": "OP", "value": "-"},
-            ],
-            "type": "int",
-        },
-        {
-            "line": 12,
-            "context": "( int mem_store ) #2",
-            "postfix": [
-                {"kind": "INT", "value": 12},
-                {"kind": "STORE", "value": "MEM"},
-            ],
-            "type": "int",
-        },
-        {
-            "line": 13,
-            "context": "( memid int / )",
-            "postfix": [
-                {"kind": "REF", "value": "MEM"},
-                {"kind": "INT", "value": 3},
-                {"kind": "OP", "value": "/"},
-            ],
-            "type": "int",
-        },
-        {
-            "line": 14,
-            "context": "( memid int + )",
-            "postfix": [
-                {"kind": "REF", "value": "Y"},
-                {"kind": "INT", "value": 3},
-                {"kind": "OP", "value": "+"},
-            ],
-            "type": "error",
-        },
-        {
-            "line": 15,
-            "context": "( int real / )",
-            "postfix": [
-                {"kind": "INT", "value": 10},
-                {"kind": "REAL", "value": 3.5},
-                {"kind": "OP", "value": "/"},
-            ],
-            "type": "error",
-        },
-        {
-            "line": 16,
-            "context": "( int real % )",
-            "postfix": [
-                {"kind": "INT", "value": 10},
-                {"kind": "REAL", "value": 3.5},
-                {"kind": "OP", "value": "%"},
-            ],
-            "type": "error",
-        },
-        {
-            "line": 17,
-            "context": "( real int % )",
-            "postfix": [
-                {"kind": "REAL", "value": 3.5},
-                {"kind": "INT", "value": 2},
-                {"kind": "OP", "value": "%"},
-            ],
-            "type": "error",
-        },
-        {
-            "line": 18,
-            "context": "( int int ^ ) #2",
-            "postfix": [
-                {"kind": "INT", "value": 4},
-                {"kind": "INT", "value": 5},
-                {"kind": "OP", "value": "^"},
-            ],
-            "type": "int",
-        },
-        {
-            "line": 19,
-            "context": "( int res ) #2",
-            "postfix": [{"kind": "INT", "value": 1}, {"kind": "RES"}],
-            "type": "int",
-        },
-        {
-            "line": 20,
-            "context": "( int ( int int < ) + )",
-            "postfix": [
-                {"kind": "INT", "value": 10},
-                {"kind": "INT", "value": 12},
-                {"kind": "INT", "value": 1},
-                {"kind": "OP", "value": "<"},
-                {"kind": "OP", "value": "+"},
-            ],
-            "type": "error",
-        },
-    ],
-    "symbols": {},
-}
+
+if errors:
+    print("\n=== ERROS SEMÂNTICOS ENCONTRADOS ===")
+    for erro in errors:
+        print(erro)
+    print(f"\nTotal: {len(errors)} erro(s)")
+else:
+    print("\n✓ Análise semântica concluída sem erros")
 
 salvar_arquivos_saida(arvore_atribuida, prefixo=prefixo)
