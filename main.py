@@ -23,9 +23,8 @@ from semantic_analyzer.attribute_tree import (
 
 
 parser = argparse.ArgumentParser(description="Run syntactic and semantic analyzers")
-parser.add_argument(
-    "-f", "--file", dest="FILE_PATH", help="Path to the token file (txt)"
-)
+parser.add_argument("FILE_PATH", help="Path to the token file (txt)")
+
 args = parser.parse_args()
 
 FILE_PATH = args.FILE_PATH

@@ -1,0 +1,2810 @@
+{
+  "lines": [
+    {
+      "line": 1,
+      "context": "( int int + )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "INT",
+          "value": 8
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 2,
+      "context": "( int real + )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "REAL",
+          "value": 3.5
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 3,
+      "context": "( real int + )",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 3.5
+        },
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 4,
+      "context": "( real real + )",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 3.5
+        },
+        {
+          "kind": "REAL",
+          "value": 2.5
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 5,
+      "context": "( int int - )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 35
+        },
+        {
+          "kind": "INT",
+          "value": 13
+        },
+        {
+          "kind": "OP",
+          "value": "-"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 6,
+      "context": "( int real - )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 35
+        },
+        {
+          "kind": "REAL",
+          "value": 2.5
+        },
+        {
+          "kind": "OP",
+          "value": "-"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 7,
+      "context": "( real int - )",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 10.5
+        },
+        {
+          "kind": "INT",
+          "value": 3
+        },
+        {
+          "kind": "OP",
+          "value": "-"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 8,
+      "context": "( real real - )",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 10.5
+        },
+        {
+          "kind": "REAL",
+          "value": 3.5
+        },
+        {
+          "kind": "OP",
+          "value": "-"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 9,
+      "context": "( int int * )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "INT",
+          "value": 6
+        },
+        {
+          "kind": "OP",
+          "value": "*"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 10,
+      "context": "( int real * )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "REAL",
+          "value": 2.5
+        },
+        {
+          "kind": "OP",
+          "value": "*"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 11,
+      "context": "( real int * )",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 2.5
+        },
+        {
+          "kind": "INT",
+          "value": 4
+        },
+        {
+          "kind": "OP",
+          "value": "*"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 12,
+      "context": "( real real * )",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 2.5
+        },
+        {
+          "kind": "REAL",
+          "value": 4.0
+        },
+        {
+          "kind": "OP",
+          "value": "*"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 13,
+      "context": "( int int / )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 27
+        },
+        {
+          "kind": "INT",
+          "value": 9
+        },
+        {
+          "kind": "OP",
+          "value": "/"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 14,
+      "context": "( int int / ) #2",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "INT",
+          "value": 3
+        },
+        {
+          "kind": "OP",
+          "value": "/"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 15,
+      "context": "( int real / )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "REAL",
+          "value": 3.5
+        },
+        {
+          "kind": "OP",
+          "value": "/"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 16,
+      "context": "( real int / )",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 10.5
+        },
+        {
+          "kind": "INT",
+          "value": 3
+        },
+        {
+          "kind": "OP",
+          "value": "/"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 17,
+      "context": "( real real / )",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 10.5
+        },
+        {
+          "kind": "REAL",
+          "value": 2.5
+        },
+        {
+          "kind": "OP",
+          "value": "/"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 18,
+      "context": "( int int % )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 17
+        },
+        {
+          "kind": "INT",
+          "value": 6
+        },
+        {
+          "kind": "OP",
+          "value": "%"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 19,
+      "context": "( int int % ) #2",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 100
+        },
+        {
+          "kind": "INT",
+          "value": 7
+        },
+        {
+          "kind": "OP",
+          "value": "%"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 20,
+      "context": "( int real % )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "REAL",
+          "value": 3.5
+        },
+        {
+          "kind": "OP",
+          "value": "%"
+        }
+      ],
+      "type": "error"
+    },
+    {
+      "line": 21,
+      "context": "( real int % )",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 3.5
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": "%"
+        }
+      ],
+      "type": "error"
+    },
+    {
+      "line": 22,
+      "context": "( real real % )",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 3.5
+        },
+        {
+          "kind": "REAL",
+          "value": 2.5
+        },
+        {
+          "kind": "OP",
+          "value": "%"
+        }
+      ],
+      "type": "error"
+    },
+    {
+      "line": 23,
+      "context": "( int int ^ )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 4
+        },
+        {
+          "kind": "INT",
+          "value": 3
+        },
+        {
+          "kind": "OP",
+          "value": "^"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 24,
+      "context": "( int int ^ ) #2",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "OP",
+          "value": "^"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 25,
+      "context": "( real int ^ )",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 2.5
+        },
+        {
+          "kind": "INT",
+          "value": 3
+        },
+        {
+          "kind": "OP",
+          "value": "^"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 26,
+      "context": "( real int ^ ) #2",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 4.0
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": "^"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 27,
+      "context": "( int real ^ )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 4
+        },
+        {
+          "kind": "REAL",
+          "value": 3.5
+        },
+        {
+          "kind": "OP",
+          "value": "^"
+        }
+      ],
+      "type": "error"
+    },
+    {
+      "line": 28,
+      "context": "( real real ^ )",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 2.5
+        },
+        {
+          "kind": "REAL",
+          "value": 2.5
+        },
+        {
+          "kind": "OP",
+          "value": "^"
+        }
+      ],
+      "type": "error"
+    },
+    {
+      "line": 29,
+      "context": "( int int ^ ) #3",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 4
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": "^"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 30,
+      "context": "( int int < )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 12
+        },
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "OP",
+          "value": "<"
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 31,
+      "context": "( int int < ) #2",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "INT",
+          "value": 12
+        },
+        {
+          "kind": "OP",
+          "value": "<"
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 32,
+      "context": "( real int < )",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 3.5
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": "<"
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 33,
+      "context": "( int real < )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "REAL",
+          "value": 3.5
+        },
+        {
+          "kind": "OP",
+          "value": "<"
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 34,
+      "context": "( real real < )",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 3.5
+        },
+        {
+          "kind": "REAL",
+          "value": 5.5
+        },
+        {
+          "kind": "OP",
+          "value": "<"
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 35,
+      "context": "( int int <= )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": "<="
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 36,
+      "context": "( int int <= ) #2",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "INT",
+          "value": 3
+        },
+        {
+          "kind": "OP",
+          "value": "<="
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 37,
+      "context": "( real real <= )",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 3.5
+        },
+        {
+          "kind": "REAL",
+          "value": 3.5
+        },
+        {
+          "kind": "OP",
+          "value": "<="
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 38,
+      "context": "( int int > )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": ">"
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 39,
+      "context": "( int int > ) #2",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "OP",
+          "value": ">"
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 40,
+      "context": "( real real > )",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 5.5
+        },
+        {
+          "kind": "REAL",
+          "value": 3.5
+        },
+        {
+          "kind": "OP",
+          "value": ">"
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 41,
+      "context": "( int int >= )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "OP",
+          "value": ">="
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 42,
+      "context": "( int int >= ) #2",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "OP",
+          "value": ">="
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 43,
+      "context": "( int int == )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "OP",
+          "value": "=="
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 44,
+      "context": "( int int == ) #2",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": "=="
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 45,
+      "context": "( real real == )",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 3.5
+        },
+        {
+          "kind": "REAL",
+          "value": 3.5
+        },
+        {
+          "kind": "OP",
+          "value": "=="
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 46,
+      "context": "( int int != )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": "!="
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 47,
+      "context": "( int int != ) #2",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "OP",
+          "value": "!="
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 48,
+      "context": "( ( int int < ) int int if )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "INT",
+          "value": 12
+        },
+        {
+          "kind": "OP",
+          "value": "<"
+        },
+        {
+          "kind": "INT",
+          "value": 100
+        },
+        {
+          "kind": "INT",
+          "value": 200
+        },
+        {
+          "kind": "IF"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 49,
+      "context": "( ( int int > ) real real if )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": ">"
+        },
+        {
+          "kind": "REAL",
+          "value": 3.5
+        },
+        {
+          "kind": "REAL",
+          "value": 2.5
+        },
+        {
+          "kind": "IF"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 50,
+      "context": "( ( int int == ) int int if )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": "=="
+        },
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "INT",
+          "value": 20
+        },
+        {
+          "kind": "IF"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 51,
+      "context": "( ( int int < ) int real if )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "INT",
+          "value": 12
+        },
+        {
+          "kind": "OP",
+          "value": "<"
+        },
+        {
+          "kind": "INT",
+          "value": 100
+        },
+        {
+          "kind": "REAL",
+          "value": 2.5
+        },
+        {
+          "kind": "IF"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 52,
+      "context": "( ( int int > ) real int if )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": ">"
+        },
+        {
+          "kind": "REAL",
+          "value": 3.5
+        },
+        {
+          "kind": "INT",
+          "value": 20
+        },
+        {
+          "kind": "IF"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 53,
+      "context": "( int int int if )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "INT",
+          "value": 100
+        },
+        {
+          "kind": "INT",
+          "value": 200
+        },
+        {
+          "kind": "IF"
+        }
+      ],
+      "type": "error"
+    },
+    {
+      "line": 54,
+      "context": "( real int int if )",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 3.5
+        },
+        {
+          "kind": "INT",
+          "value": 100
+        },
+        {
+          "kind": "INT",
+          "value": 200
+        },
+        {
+          "kind": "IF"
+        }
+      ],
+      "type": "error"
+    },
+    {
+      "line": 55,
+      "context": "( ( int int > ) int while )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": ">"
+        },
+        {
+          "kind": "INT",
+          "value": 100
+        },
+        {
+          "kind": "WHILE"
+        }
+      ],
+      "type": "void"
+    },
+    {
+      "line": 56,
+      "context": "( ( int int < ) real while )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "INT",
+          "value": 12
+        },
+        {
+          "kind": "OP",
+          "value": "<"
+        },
+        {
+          "kind": "REAL",
+          "value": 3.5
+        },
+        {
+          "kind": "WHILE"
+        }
+      ],
+      "type": "void"
+    },
+    {
+      "line": 57,
+      "context": "( ( int int == ) int while )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": "=="
+        },
+        {
+          "kind": "INT",
+          "value": 42
+        },
+        {
+          "kind": "WHILE"
+        }
+      ],
+      "type": "void"
+    },
+    {
+      "line": 58,
+      "context": "( int int while )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "INT",
+          "value": 100
+        },
+        {
+          "kind": "WHILE"
+        }
+      ],
+      "type": "void"
+    },
+    {
+      "line": 59,
+      "context": "( real int while )",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 3.5
+        },
+        {
+          "kind": "INT",
+          "value": 100
+        },
+        {
+          "kind": "WHILE"
+        }
+      ],
+      "type": "void"
+    },
+    {
+      "line": 60,
+      "context": "( int mem_store )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 55
+        },
+        {
+          "kind": "STORE",
+          "value": "X"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 61,
+      "context": "( int mem_store ) #2",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 100
+        },
+        {
+          "kind": "STORE",
+          "value": "underscore"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 62,
+      "context": "( memid int - )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "X"
+        },
+        {
+          "kind": "INT",
+          "value": 7
+        },
+        {
+          "kind": "OP",
+          "value": "-"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 63,
+      "context": "( memid int + )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "Y"
+        },
+        {
+          "kind": "INT",
+          "value": 3
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        }
+      ],
+      "type": "error"
+    },
+    {
+      "line": 64,
+      "context": "( memid int * )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "UNDEFINED"
+        },
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "OP",
+          "value": "*"
+        }
+      ],
+      "type": "error"
+    },
+    {
+      "line": 65,
+      "context": "( int mem_store ) #3",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "STORE",
+          "value": "MEM"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 66,
+      "context": "( int mem_store ) #4",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 20
+        },
+        {
+          "kind": "STORE",
+          "value": "MEM"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 67,
+      "context": "( int int + ) #2",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "INT",
+          "value": 8
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 68,
+      "context": "( int res )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 4
+        },
+        {
+          "kind": "RES"
+        }
+      ],
+      "type": "error"
+    },
+    {
+      "line": 69,
+      "context": "( ( int res ) int * )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 4
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": "*"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 70,
+      "context": "( int ( int res ) + )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 80
+        },
+        {
+          "kind": "INT",
+          "value": 4
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 71,
+      "context": "( int int + ) #3",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 72,
+      "context": "( real real - ) #2",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 3.5
+        },
+        {
+          "kind": "REAL",
+          "value": 2.5
+        },
+        {
+          "kind": "OP",
+          "value": "-"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 73,
+      "context": "( int res ) #2",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "RES"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 74,
+      "context": "( int int / ) #3",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "INT",
+          "value": 0
+        },
+        {
+          "kind": "OP",
+          "value": "/"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 75,
+      "context": "( int int / ) #4",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 0
+        },
+        {
+          "kind": "INT",
+          "value": 0
+        },
+        {
+          "kind": "OP",
+          "value": "/"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 76,
+      "context": "( int int % ) #3",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "INT",
+          "value": 0
+        },
+        {
+          "kind": "OP",
+          "value": "%"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 77,
+      "context": "( ( int int + ) ( int int * ) * )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "INT",
+          "value": 3
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": "*"
+        },
+        {
+          "kind": "OP",
+          "value": "*"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 78,
+      "context": "( ( ( int int + ) int * ) int - )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "INT",
+          "value": 3
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "INT",
+          "value": 4
+        },
+        {
+          "kind": "OP",
+          "value": "*"
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": "-"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 79,
+      "context": "( ( int real + ) int * )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "REAL",
+          "value": 3.5
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": "*"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 80,
+      "context": "( ( int int / ) int + )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": "/"
+        },
+        {
+          "kind": "INT",
+          "value": 3
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 81,
+      "context": "( int ( int int < ) + )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "INT",
+          "value": 12
+        },
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "OP",
+          "value": "<"
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        }
+      ],
+      "type": "error"
+    },
+    {
+      "line": 82,
+      "context": "( ( int int == ) int * )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": "=="
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": "*"
+        }
+      ],
+      "type": "error"
+    },
+    {
+      "line": 83,
+      "context": "( ( int int == ) ( int int == ) + )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": "=="
+        },
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "OP",
+          "value": "=="
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        }
+      ],
+      "type": "error"
+    },
+    {
+      "line": 84,
+      "context": "( int int + ) #4",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 85,
+      "context": "( int int - ) #2",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": "-"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 86,
+      "context": "( int int * ) #2",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": "*"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 87,
+      "context": "( int int / ) #5",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": "/"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 88,
+      "context": "( int int % ) #4",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": "%"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 89,
+      "context": "( int int ^ ) #4",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": "^"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 90,
+      "context": "( int int < ) #3",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": "<"
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 91,
+      "context": "( int int <= ) #3",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": "<="
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 92,
+      "context": "( int int > ) #3",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": ">"
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 93,
+      "context": "( int int >= ) #3",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": ">="
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 94,
+      "context": "( int int == ) #3",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": "=="
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 95,
+      "context": "( int int != ) #3",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": "!="
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 96,
+      "context": "( real real + ) #2",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 10.5
+        },
+        {
+          "kind": "REAL",
+          "value": 5.5
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 97,
+      "context": "( real real - ) #3",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 10.5
+        },
+        {
+          "kind": "REAL",
+          "value": 5.5
+        },
+        {
+          "kind": "OP",
+          "value": "-"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 98,
+      "context": "( real real * ) #2",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 10.5
+        },
+        {
+          "kind": "REAL",
+          "value": 5.5
+        },
+        {
+          "kind": "OP",
+          "value": "*"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 99,
+      "context": "( real real / ) #2",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 10.5
+        },
+        {
+          "kind": "REAL",
+          "value": 5.5
+        },
+        {
+          "kind": "OP",
+          "value": "/"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 100,
+      "context": "( real real % ) #2",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 10.5
+        },
+        {
+          "kind": "REAL",
+          "value": 5.5
+        },
+        {
+          "kind": "OP",
+          "value": "%"
+        }
+      ],
+      "type": "error"
+    },
+    {
+      "line": 101,
+      "context": "( real int ^ ) #3",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 10.5
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": "^"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 102,
+      "context": "( real real < ) #2",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 10.5
+        },
+        {
+          "kind": "REAL",
+          "value": 5.5
+        },
+        {
+          "kind": "OP",
+          "value": "<"
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 103,
+      "context": "( int real + ) #2",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "REAL",
+          "value": 5.5
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 104,
+      "context": "( int real - ) #2",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "REAL",
+          "value": 5.5
+        },
+        {
+          "kind": "OP",
+          "value": "-"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 105,
+      "context": "( int real * ) #2",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "REAL",
+          "value": 5.5
+        },
+        {
+          "kind": "OP",
+          "value": "*"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 106,
+      "context": "( int real / ) #2",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "REAL",
+          "value": 5.5
+        },
+        {
+          "kind": "OP",
+          "value": "/"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 107,
+      "context": "( int real % ) #2",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "REAL",
+          "value": 5.5
+        },
+        {
+          "kind": "OP",
+          "value": "%"
+        }
+      ],
+      "type": "error"
+    },
+    {
+      "line": 108,
+      "context": "( int real < ) #2",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "REAL",
+          "value": 5.5
+        },
+        {
+          "kind": "OP",
+          "value": "<"
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 109,
+      "context": "( real int + ) #2",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 10.5
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 110,
+      "context": "( real int - ) #2",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 10.5
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": "-"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 111,
+      "context": "( real int * ) #2",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 10.5
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": "*"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 112,
+      "context": "( real int / ) #2",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 10.5
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": "/"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 113,
+      "context": "( real int % ) #2",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 10.5
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": "%"
+        }
+      ],
+      "type": "error"
+    },
+    {
+      "line": 114,
+      "context": "( real int < ) #2",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 10.5
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": "<"
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 115,
+      "context": "( int real ^ ) #2",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "REAL",
+          "value": 3.5
+        },
+        {
+          "kind": "OP",
+          "value": "^"
+        }
+      ],
+      "type": "error"
+    },
+    {
+      "line": 116,
+      "context": "( real real ^ ) #2",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 4.0
+        },
+        {
+          "kind": "REAL",
+          "value": 2.5
+        },
+        {
+          "kind": "OP",
+          "value": "^"
+        }
+      ],
+      "type": "error"
+    },
+    {
+      "line": 117,
+      "context": "( int real ^ ) #3",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "REAL",
+          "value": 1.5
+        },
+        {
+          "kind": "OP",
+          "value": "^"
+        }
+      ],
+      "type": "error"
+    },
+    {
+      "line": 118,
+      "context": "( real mem_store )",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 0.5
+        },
+        {
+          "kind": "STORE",
+          "value": "I"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 119,
+      "context": "( int mem_store ) #5",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "STORE",
+          "value": "N"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 120,
+      "context": "( int mem_store ) #6",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 0
+        },
+        {
+          "kind": "STORE",
+          "value": "SUM"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 121,
+      "context": "( ( memid memid < ) ( ( memid int + ) mem_store ) while )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "I"
+        },
+        {
+          "kind": "REF",
+          "value": "N"
+        },
+        {
+          "kind": "OP",
+          "value": "<"
+        },
+        {
+          "kind": "REF",
+          "value": "I"
+        },
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "STORE",
+          "value": "I"
+        },
+        {
+          "kind": "WHILE"
+        }
+      ],
+      "type": "void"
+    },
+    {
+      "line": 122,
+      "context": "( int mem_store ) #7",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "STORE",
+          "value": "I"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 123,
+      "context": "( memid memid + )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "SUM"
+        },
+        {
+          "kind": "REF",
+          "value": "N"
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 124,
+      "context": "( memid )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "SUM"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 125,
+      "context": "( int mem_store ) #8",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 10
+        },
+        {
+          "kind": "STORE",
+          "value": "MAX"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 126,
+      "context": "( ( memid memid > ) ( memid ) ( memid ) if )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "SUM"
+        },
+        {
+          "kind": "REF",
+          "value": "MAX"
+        },
+        {
+          "kind": "OP",
+          "value": ">"
+        },
+        {
+          "kind": "REF",
+          "value": "SUM"
+        },
+        {
+          "kind": "REF",
+          "value": "MAX"
+        },
+        {
+          "kind": "IF"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 127,
+      "context": "( memid memid - )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "MAX"
+        },
+        {
+          "kind": "REF",
+          "value": "SUM"
+        },
+        {
+          "kind": "OP",
+          "value": "-"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 128,
+      "context": "( int mem_store ) #9",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 12
+        },
+        {
+          "kind": "STORE",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 129,
+      "context": "( int mem_store ) #10",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 9
+        },
+        {
+          "kind": "STORE",
+          "value": "B"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 130,
+      "context": "( int mem_store ) #11",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 0
+        },
+        {
+          "kind": "STORE",
+          "value": "R"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 131,
+      "context": "( ( memid memid > ) ( ( memid memid + ) mem_store ) ( int mem_store ) if )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "OP",
+          "value": ">"
+        },
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "STORE",
+          "value": "R"
+        },
+        {
+          "kind": "INT",
+          "value": 0
+        },
+        {
+          "kind": "STORE",
+          "value": "R"
+        },
+        {
+          "kind": "IF"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 132,
+      "context": "( int mem_store ) #12",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "STORE",
+          "value": "XX"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 133,
+      "context": "( int mem_store ) #13",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "STORE",
+          "value": "YY"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 134,
+      "context": "( ( memid memid == ) ( ( memid int + ) mem_store ) ( memid ) if )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "XX"
+        },
+        {
+          "kind": "REF",
+          "value": "YY"
+        },
+        {
+          "kind": "OP",
+          "value": "=="
+        },
+        {
+          "kind": "REF",
+          "value": "R"
+        },
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "STORE",
+          "value": "R"
+        },
+        {
+          "kind": "REF",
+          "value": "R"
+        },
+        {
+          "kind": "IF"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 135,
+      "context": "( ( memid int * ) )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "R"
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": "*"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 136,
+      "context": "( int mem_store ) #14",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 15
+        },
+        {
+          "kind": "STORE",
+          "value": "Z"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 137,
+      "context": "( ( memid memid > ) ( ( memid memid - ) mem_store ) ( memid ) if )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "Z"
+        },
+        {
+          "kind": "REF",
+          "value": "R"
+        },
+        {
+          "kind": "OP",
+          "value": ">"
+        },
+        {
+          "kind": "REF",
+          "value": "Z"
+        },
+        {
+          "kind": "REF",
+          "value": "R"
+        },
+        {
+          "kind": "OP",
+          "value": "-"
+        },
+        {
+          "kind": "STORE",
+          "value": "R"
+        },
+        {
+          "kind": "REF",
+          "value": "R"
+        },
+        {
+          "kind": "IF"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 138,
+      "context": "( memid ) #2",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "R"
+        }
+      ],
+      "type": "int"
+    }
+  ],
+  "symbols": {}
+}
